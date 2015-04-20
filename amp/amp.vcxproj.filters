@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Standalone">
+      <UniqueIdentifier>{f182c798-767e-4232-9953-4afd618744d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Demo">
+      <UniqueIdentifier>{cfa02d8e-9297-4df0-be40-84a5c96c05e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AMP">
+      <UniqueIdentifier>{12c993d4-4987-4a42-b3dd-dacb02d6bf2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Examples">
+      <UniqueIdentifier>{bb9f2688-3605-4c17-b980-3f5f34f7ae8d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoAMP.cpp">
+      <Filter>Source Files\Standalone</Filter>
+    </ClCompile>
+    <ClCompile Include="HeatDemoAMP.cpp">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="AMPPartition.cpp">
+      <Filter>Source Files\AMP</Filter>
+    </ClCompile>
+    <ClCompile Include="AMPUtilities.cpp">
+      <Filter>Source Files\AMP</Filter>
+    </ClCompile>
+    <ClCompile Include="amp_map_beispiel.cpp">
+      <Filter>Source Files\Examples</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DemoAMP.h">
+      <Filter>Source Files\Standalone</Filter>
+    </ClInclude>
+    <ClInclude Include="HeatDemoAMP.h">
+      <Filter>Source Files\Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="AMPPartition.h">
+      <Filter>Source Files\AMP</Filter>
+    </ClInclude>
+    <ClInclude Include="AMPUtilities.h">
+      <Filter>Source Files\AMP</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorUtilitiesAMP.h">
+      <Filter>Source Files\AMP</Filter>
+    </ClInclude>
+    <ClInclude Include="Extent2AMP.h">
+      <Filter>Source Files\AMP</Filter>
+    </ClInclude>
+    <ClInclude Include="Beispiele.h">
+      <Filter>Source Files\Examples</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="..\cuda\FunctionCaller.cpp">
+      <Filter>from_cuda_project</Filter>
+    </ClCompile>
+    <ClCompile Include="bolt_beispiel.cpp" />
+    <ClCompile Include="..\opencl\HeatDemoOpenCL.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cuda\DemoBenchmark.cpp">
+      <Filter>from_cuda_project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cuda\FileUtilities.cpp">
+      <Filter>from_cuda_project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cuda\HeatUtilities.cpp">
+      <Filter>from_cuda_project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cuda\HostBuffer.cpp">
+      <Filter>from_cuda_project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cuda\Logger.cpp">
+      <Filter>from_cuda_project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cuda\Timer.cpp">
+      <Filter>from_cuda_project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\cuda\UnpinnedBuffer.cpp">
+      <Filter>from_cuda_project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\opencl\HeatDemoOpenCLStandalone.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\opencl\opencl_beispiel.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\opencl\OpenCLUtilities.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\opencl\SimpleBenchmark.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\opencl\SimpleTest.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="from_opencl">
+      <UniqueIdentifier>{fcd9a112-4b0e-495a-846b-25e422e1676b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="from_cuda_project">
+      <UniqueIdentifier>{34987e5a-d958-4d26-ba7b-2c24190c7605}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cuda\FunctionCaller.h">
+      <Filter>from_cuda_project</Filter>
+    </ClInclude>
+    <ClInclude Include="bolt_beispiel.h" />
+    <ClInclude Include="..\opencl\HeatDemoOpenCL.h">
+      <Filter>from_opencl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cuda\DemoBenchmark.h">
+      <Filter>from_cuda_project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cuda\FileUtilities.h">
+      <Filter>from_cuda_project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cuda\HeatUtilities.h">
+      <Filter>from_cuda_project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cuda\HostBuffer.h">
+      <Filter>from_cuda_project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cuda\Logger.h">
+      <Filter>from_cuda_project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cuda\Timer.h">
+      <Filter>from_cuda_project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\cuda\UnpinnedBuffer.h">
+      <Filter>from_cuda_project</Filter>
+    </ClInclude>
+    <ClInclude Include="..\opencl\cl_1_2.hpp">
+      <Filter>from_opencl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\opencl\HeatDemoOpenCLStandalone.h">
+      <Filter>from_opencl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\opencl\opencl_beispiel.h">
+      <Filter>from_opencl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\opencl\OpenCLUtilities.h">
+      <Filter>from_opencl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\opencl\SimpleBenchmark.h">
+      <Filter>from_opencl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\opencl\SimpleTest.h">
+      <Filter>from_opencl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\opencl\HeatDemoOpenCL.cl">
+      <Filter>from_opencl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

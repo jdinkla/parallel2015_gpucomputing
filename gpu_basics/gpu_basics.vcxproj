@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A725A294-A212-4C34-87E8-37C8EA8AB8F2}</ProjectGuid>
+    <RootNamespace>gpu_basics</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BenchmarkUtilities.cpp" />
+    <ClCompile Include="CheckSums.cpp" />
+    <ClCompile Include="DemoBenchmark.cpp" />
+    <ClCompile Include="FileUtilities.cpp" />
+    <ClCompile Include="FPS.cpp" />
+    <ClCompile Include="FunctionCaller.cpp" />
+    <ClCompile Include="HeatDemoCPU.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="PartitionUtilities.cpp" />
+    <ClCompile Include="Timer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AsyncScheduler.h" />
+    <ClInclude Include="AsyncSchedulerInterval.h" />
+    <ClInclude Include="BaseBuffer.h" />
+    <ClInclude Include="BenchmarkUtilities.h" />
+    <ClInclude Include="CheckSums.h" />
+    <ClInclude Include="ColorUtilities.h" />
+    <ClInclude Include="CommandLineOptions.h" />
+    <ClInclude Include="ConstantHeatSource.h" />
+    <ClInclude Include="Convert.h" />
+    <ClInclude Include="Converter.h" />
+    <ClInclude Include="ConvertType.h" />
+    <ClInclude Include="Defs.h" />
+    <ClInclude Include="DefsByMe.h" />
+    <ClInclude Include="DemoBenchmark.h" />
+    <ClInclude Include="DoubleBuffer.h" />
+    <ClInclude Include="EmptyDemo.h" />
+    <ClInclude Include="Extent2.h" />
+    <ClInclude Include="Extent3.h" />
+    <ClInclude Include="FileUtilities.h" />
+    <ClInclude Include="FPS.h" />
+    <ClInclude Include="FunctionCaller.h" />
+    <ClInclude Include="GLCommon.h" />
+    <ClInclude Include="HeatDemoCPU.h" />
+    <ClInclude Include="HeatDemoDefs.h" />
+    <ClInclude Include="HostBuffer.h" />
+    <ClInclude Include="IDemo.h" />
+    <ClInclude Include="IHeatSource.h" />
+    <ClInclude Include="IScheduler.h" />
+    <ClInclude Include="ISchedulerInterval.h" />
+    <ClInclude Include="ITimer.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="MapHost.h" />
+    <ClInclude Include="MaskHost.h" />
+    <ClInclude Include="Maybe.h" />
+    <ClInclude Include="Partition.h" />
+    <ClInclude Include="PartitionUtilities.h" />
+    <ClInclude Include="Pos2.h" />
+    <ClInclude Include="RandomHeatSource.h" />
+    <ClInclude Include="Region2.h" />
+    <ClInclude Include="SequentialScheduler.h" />
+    <ClInclude Include="SequentialSchedulerInterval.h" />
+    <ClInclude Include="StencilHeatHost.h" />
+    <ClInclude Include="StringUtilities.h" />
+    <ClInclude Include="ThreadScheduler.h" />
+    <ClInclude Include="ThreadSchedulerInterval.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="UnpinnedBuffer.h" />
+    <ClInclude Include="Utilities.h" />
+    <ClInclude Include="Version.h" />
+    <ClInclude Include="XExtent2.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

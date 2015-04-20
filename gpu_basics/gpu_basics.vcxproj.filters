@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1ee6b886-40b4-4a39-af21-be3489da28ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Partitions">
+      <UniqueIdentifier>{c55c2771-cf6f-490a-86d4-8fae59714694}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Scheduler">
+      <UniqueIdentifier>{13530402-e205-49df-b5d3-abe844df6fcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Heat">
+      <UniqueIdentifier>{09d61c52-7632-4b2b-bdd4-b67aa1d7e72b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Extents">
+      <UniqueIdentifier>{d3029903-e01d-400c-8307-feae3b90719d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Colors">
+      <UniqueIdentifier>{26c1ad78-ac85-467a-abf9-0ba1b6c88160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Buffer">
+      <UniqueIdentifier>{b1d3ae22-aa6d-4b04-aaaa-7b1408df949a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Demo">
+      <UniqueIdentifier>{7e0a66a5-5695-4535-8f44-9013c044615d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Patterns">
+      <UniqueIdentifier>{3b0ebb6a-d5d2-4d9a-9019-61576abb0811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI">
+      <UniqueIdentifier>{67743494-79d3-426f-b999-362ffae307f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Benchmark">
+      <UniqueIdentifier>{b88e55b8-3b68-4b47-ae5a-f2360fab75cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{b5eb9757-546f-469a-9a09-34817627e23e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Logger.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ITimer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Maybe.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="StringUtilities.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Utilities.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="FunctionCaller.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Version.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="PartitionUtilities.h">
+      <Filter>Source Files\Partitions</Filter>
+    </ClInclude>
+    <ClInclude Include="Partition.h">
+      <Filter>Source Files\Partitions</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncScheduler.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="IScheduler.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="SequentialScheduler.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadScheduler.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Extent2.h">
+      <Filter>Source Files\Extents</Filter>
+    </ClInclude>
+    <ClInclude Include="Extent3.h">
+      <Filter>Source Files\Extents</Filter>
+    </ClInclude>
+    <ClInclude Include="Pos2.h">
+      <Filter>Source Files\Extents</Filter>
+    </ClInclude>
+    <ClInclude Include="Region2.h">
+      <Filter>Source Files\Extents</Filter>
+    </ClInclude>
+    <ClInclude Include="XExtent2.h">
+      <Filter>Source Files\Extents</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleBuffer.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CheckSums.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandLineOptions.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseBuffer.h">
+      <Filter>Source Files\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="HostBuffer.h">
+      <Filter>Source Files\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="UnpinnedBuffer.h">
+      <Filter>Source Files\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ConstantHeatSource.h">
+      <Filter>Source Files\Heat</Filter>
+    </ClInclude>
+    <ClInclude Include="IHeatSource.h">
+      <Filter>Source Files\Heat</Filter>
+    </ClInclude>
+    <ClInclude Include="RandomHeatSource.h">
+      <Filter>Source Files\Heat</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorUtilities.h">
+      <Filter>Source Files\Colors</Filter>
+    </ClInclude>
+    <ClInclude Include="Convert.h">
+      <Filter>Source Files\Colors</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter.h">
+      <Filter>Source Files\Colors</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertType.h">
+      <Filter>Source Files\Colors</Filter>
+    </ClInclude>
+    <ClInclude Include="FileUtilities.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Defs.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DefsByMe.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EmptyDemo.h">
+      <Filter>Source Files\Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="IDemo.h">
+      <Filter>Source Files\Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="HeatDemoCPU.h">
+      <Filter>Source Files\Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="HeatDemoDefs.h">
+      <Filter>Source Files\Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="MapHost.h">
+      <Filter>Source Files\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="MaskHost.h">
+      <Filter>Source Files\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="StencilHeatHost.h">
+      <Filter>Source Files\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="ISchedulerInterval.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyncSchedulerInterval.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="SequentialSchedulerInterval.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadSchedulerInterval.h">
+      <Filter>Source Files\Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="FPS.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="GLCommon.h">
+      <Filter>Source Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="BenchmarkUtilities.h">
+      <Filter>Source Files\Benchmark</Filter>
+    </ClInclude>
+    <ClInclude Include="DemoBenchmark.h">
+      <Filter>Source Files\Benchmark</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="FunctionCaller.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="PartitionUtilities.cpp">
+      <Filter>Source Files\Partitions</Filter>
+    </ClCompile>
+    <ClCompile Include="CheckSums.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="FileUtilities.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="HeatDemoCPU.cpp">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="FPS.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="BenchmarkUtilities.cpp">
+      <Filter>Source Files\Benchmark</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoBenchmark.cpp">
+      <Filter>Source Files\Benchmark</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

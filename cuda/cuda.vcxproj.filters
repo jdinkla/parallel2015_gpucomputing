@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Standalone">
+      <UniqueIdentifier>{0021c574-6808-4e0a-a9e1-c65fe88ead54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utilities">
+      <UniqueIdentifier>{f8f6788a-49ff-47e3-9ee0-1245972e66de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Stencil">
+      <UniqueIdentifier>{f8e77896-ff90-4d55-9573-687cb301f8ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Heat">
+      <UniqueIdentifier>{5e54f511-41ab-4d2f-9ed9-a6eda07dd975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Map">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\MultiGPU">
+      <UniqueIdentifier>{6c7149b3-459e-4e1a-84c4-1310730b5f7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Demo">
+      <UniqueIdentifier>{c400a502-be1d-4f4f-95d3-4d984f616b29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Cuda">
+      <UniqueIdentifier>{601aafdd-95db-416b-9cc7-a703255f0bec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Buffer">
+      <UniqueIdentifier>{8a89b053-21ce-4e1c-ab90-1bc2b1aeac8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Benchmarks">
+      <UniqueIdentifier>{fd90f114-603f-47de-80b9-5e5e34a1bc8e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceBuffer.cpp">
+      <Filter>Source Files\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="PinnedBuffer.cpp">
+      <Filter>Source Files\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="CudaUtilities.cpp">
+      <Filter>Source Files\Cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="CudaExecConfig.cpp">
+      <Filter>Source Files\Cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="BufferPair.cpp">
+      <Filter>Source Files\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="ManagedBuffer.cpp">
+      <Filter>Source Files\Buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="GPUs.cpp">
+      <Filter>Source Files\MultiGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="GPU.cpp">
+      <Filter>Source Files\MultiGPU</Filter>
+    </ClCompile>
+    <ClCompile Include="HeatDemoBenchmark.cpp">
+      <Filter>Source Files\Benchmarks</Filter>
+    </ClCompile>
+    <ClCompile Include="HeatUtilities.cpp">
+      <Filter>Source Files\Heat</Filter>
+    </ClCompile>
+    <ClCompile Include="CudaPartition.cpp">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="CudaBenchmarkUtilities.cpp">
+      <Filter>Source Files\Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PinnedBuffer.h">
+      <Filter>Source Files\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceBuffer.h">
+      <Filter>Source Files\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaUtilities.h">
+      <Filter>Source Files\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaExecConfig.h">
+      <Filter>Source Files\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferPair.h">
+      <Filter>Source Files\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="ManagedBuffer.h">
+      <Filter>Source Files\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="GPU.h">
+      <Filter>Source Files\MultiGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="GPUs.h">
+      <Filter>Source Files\MultiGPU</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Source Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Stencil.h">
+      <Filter>Source Files\Stencil</Filter>
+    </ClInclude>
+    <ClInclude Include="StencilHeat.h">
+      <Filter>Source Files\Stencil</Filter>
+    </ClInclude>
+    <ClInclude Include="BufferUtilities.h">
+      <Filter>Source Files\Buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="MapExt.h">
+      <Filter>Source Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Streams.h">
+      <Filter>Source Files\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="HeatDemoSingleGPU.h">
+      <Filter>Source Files\Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="HeatDemoBenchmark.h">
+      <Filter>Source Files\Benchmarks</Filter>
+    </ClInclude>
+    <ClInclude Include="HeatDemoMultiGPU.h">
+      <Filter>Source Files\Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaTimer.h">
+      <Filter>Source Files\Cuda</Filter>
+    </ClInclude>
+    <ClInclude Include="Map2.h">
+      <Filter>Source Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="Mask.h">
+      <Filter>Source Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="MaskWithOffset.h">
+      <Filter>Source Files\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="StencilHeatWithOffset.h">
+      <Filter>Source Files\Stencil</Filter>
+    </ClInclude>
+    <ClInclude Include="StencilHeatHost.h">
+      <Filter>Source Files\Stencil</Filter>
+    </ClInclude>
+    <ClInclude Include="HeatUtilities.h">
+      <Filter>Source Files\Heat</Filter>
+    </ClInclude>
+    <ClInclude Include="NvtxUtilities.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaPartition.h">
+      <Filter>Source Files\Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="DemoMultiGPU.h">
+      <Filter>Source Files\Standalone</Filter>
+    </ClInclude>
+    <ClInclude Include="DemoSingleGPU.h">
+      <Filter>Source Files\Standalone</Filter>
+    </ClInclude>
+    <ClInclude Include="CudaBenchmarkUtilities.h">
+      <Filter>Source Files\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CudaCompile Include="StencilHeat.cu">
+      <Filter>Source Files\Stencil</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HeatDemoSingleGPU.cu">
+      <Filter>Source Files\Demo</Filter>
+    </CudaCompile>
+    <CudaCompile Include="HeatDemoMultiGPU.cu">
+      <Filter>Source Files\Demo</Filter>
+    </CudaCompile>
+    <CudaCompile Include="StencilHeatWithOffset.cu">
+      <Filter>Source Files\Stencil</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DemoMultiGPU.cu">
+      <Filter>Source Files\Standalone</Filter>
+    </CudaCompile>
+    <CudaCompile Include="DemoSingleGPU.cu">
+      <Filter>Source Files\Standalone</Filter>
+    </CudaCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bench.bat">
+      <Filter>Source Files\Benchmarks</Filter>
+    </None>
+  </ItemGroup>
+</Project>

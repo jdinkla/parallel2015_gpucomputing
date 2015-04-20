@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="from_opencl">
+      <UniqueIdentifier>{3532f5ad-cd3e-46b5-81ca-5b25bd75a58b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cl">
+      <UniqueIdentifier>{26cc7e56-dda1-43cf-a4df-4c71982a72ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{74c7b090-5624-4347-8118-613b8f3068b2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\opencl\OpenCLUtilities.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\opencl\SimpleTest.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\opencl\SimpleBenchmark.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\opencl\opencl_beispiel.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\opencl\HeatDemoOpenCL.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\opencl\DemoOpenCL.cpp">
+      <Filter>from_opencl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\opencl\cl_1_2.hpp">
+      <Filter>from_opencl</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Intel_OpenCL_Build_Rules Include="..\opencl\cl\heat_multi.cl">
+      <Filter>cl</Filter>
+    </Intel_OpenCL_Build_Rules>
+    <Intel_OpenCL_Build_Rules Include="..\opencl\cl\heat_single.cl">
+      <Filter>cl</Filter>
+    </Intel_OpenCL_Build_Rules>
+    <Intel_OpenCL_Build_Rules Include="..\opencl\cl\square.cl">
+      <Filter>cl</Filter>
+    </Intel_OpenCL_Build_Rules>
+    <Intel_OpenCL_Build_Rules Include="..\opencl\cl\square_int.cl">
+      <Filter>cl</Filter>
+    </Intel_OpenCL_Build_Rules>
+  </ItemGroup>
+</Project>

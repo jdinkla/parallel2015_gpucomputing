@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="HeatDemoOpenCL.h">
+      <Filter>Source Files\Demo</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleTest.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="opencl_beispiel.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenCLUtilities.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleBenchmark.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cl_1_2.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DemoOpenCL.h">
+      <Filter>Source Files\Standalone</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HeatDemoOpenCL.cpp">
+      <Filter>Source Files\Demo</Filter>
+    </ClCompile>
+    <ClCompile Include="opencl_beispiel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenCLUtilities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleBenchmark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DemoOpenCL.cpp">
+      <Filter>Source Files\Standalone</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5481e3d3-9c51-4516-a7e8-f95f39ff4275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Demo">
+      <UniqueIdentifier>{34c7b75e-3c0c-4851-9d29-33e775774215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cl">
+      <UniqueIdentifier>{94366403-51ae-4df8-a223-6501d9149615}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Standalone">
+      <UniqueIdentifier>{3712f43c-45c6-4b02-9e51-478edaaaeb35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cl\square.cl">
+      <Filter>Source Files\cl</Filter>
+    </None>
+    <None Include="cl\square_int.cl">
+      <Filter>Source Files\cl</Filter>
+    </None>
+    <None Include="cl\heat_multi.cl">
+      <Filter>Source Files\cl</Filter>
+    </None>
+    <None Include="cl\heat_single.cl">
+      <Filter>Source Files\cl</Filter>
+    </None>
+  </ItemGroup>
+</Project>

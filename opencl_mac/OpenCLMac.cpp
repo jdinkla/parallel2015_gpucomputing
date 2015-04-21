@@ -14,9 +14,7 @@
 #include "SimpleBenchmark.h"
 #include "opencl_beispiel.h"
 #include "DemoOpenCL.h"
-#include "DemoMultiOpenCL.h"
 #include "HeatDemoOpenCL.h"
-#include "HeatDemoMultiOpenCL.h"
 #include "DemoBenchmark.h"
 #include "BenchmarkUtilities.h"
 
@@ -29,24 +27,10 @@ void benchmark_heat_single()
 	run(demo, DemoBenchmark{ demo, "Single-OpenCL" });
 }
 
-void benchmark_heat_multi()
-{
-	HeatDemoMultiOpenCL demo;
-	demo.unset_opengl();
-	run(demo, DemoBenchmark{ demo, "Multi-OpenCL" });
-}
-
 void benchmark2_single()
 {
 	HeatDemoOpenCL demo;
 	run(demo, "Single-OpenCL", get_sizes());
-}
-
-void benchmark2_multi()
-{
-	HeatDemoMultiOpenCL demo;
-	demo.unset_opengl();
-	run(demo, "Multi-OpenCL", get_sizes());
 }
 
 int main(int argc, char** argv)
@@ -79,11 +63,8 @@ int main(int argc, char** argv)
 	// DemoOpenCL.h
 	fc.add("demo_single", &demo_single_opencl);
 	fc.add("demo_single_opencl", &demo_single_opencl);
-	fc.add("demo_multi", &demo_multi_opencl);
-	fc.add("demo_multi_opencl", &demo_multi_opencl);
 	
 	fc.add("benchmark_single", &benchmark_heat_single);
-	fc.add("benchmark_multi", &benchmark_heat_multi);
 
 	// call the function
 	const int rc = fc.exec(argc, argv);

@@ -42,9 +42,9 @@ OS_ARCH = $(shell uname -m | sed -e "s/i386/i686/")
 
 # Project folders that contain CUDA samples
 ifneq ($(DARWIN),)
-PROJECTS ?= $(shell find gpu_basics cuda cuda_demo opencl_demo -name Makefile)
+PROJECTS ?= $(shell find gpu_basics cuda -name Makefile)
 else
-PROJECTS ?= $(shell find gpu_basics cuda cuda_demo opencl_mac opencl_demo -name Makefile)
+PROJECTS ?= $(shell find gpu_basics cuda opencl_mac -name Makefile)
 endif
 
 FILTER-OUT :=

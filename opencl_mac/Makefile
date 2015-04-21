@@ -6,7 +6,7 @@ INCLUDES =  -I../opencl -I../cuda -I../gpu_basics
 CCFLAGS = -std=c++11 -stdlib=libc++
 LDFLAGS = -std=c++11 -stdlib=libc++ -framework OpenCL -lgpu_basics -L../gpu_basics
 
-CPP = OpenCLMac.cpp ../opencl/DemoMultiOpenCL.cpp ../opencl/OpenCLUtilities.cpp ../opencl/SimpleTest.cpp ../opencl/opencl_beispiel.cpp ../opencl/HeatDemoOpenCL.cpp ../opencl/HeatDemoMultiOpenCL.cpp ../opencl/SimpleBenchmark.cpp ../opencl/DemoOpenCL.cpp
+CPP = OpenCLMac.cpp ../opencl/OpenCLUtilities.cpp ../opencl/SimpleTest.cpp ../opencl/opencl_beispiel.cpp ../opencl/HeatDemoOpenCL.cpp ../opencl/SimpleBenchmark.cpp ../opencl/DemoOpenCL.cpp
 CPP_OS = $(patsubst %.cpp, %.o, $(CPP))
 
 CPP_OS2 = $(notdir $(CPP_OS))

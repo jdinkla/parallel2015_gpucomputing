@@ -12,10 +12,17 @@
 typedef unsigned char uchar;
 //typedef struct { uchar x, y, z, w; } uchar4;
 
+#ifdef MAC
+struct __attribute__((__aligned__(4))) uchar4
+{
+	unsigned char x, y, z, w;
+};
+#else
 struct __declspec(align(4)) uchar4
 {
 	unsigned char x, y, z, w;
 };
+#endif
 
 inline uchar4 make_uchar4(unsigned char x, unsigned char y, unsigned char z, unsigned char w)
 {
